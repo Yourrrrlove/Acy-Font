@@ -15,6 +15,6 @@ void RemoveImageData(String fileName){
   byte[]data=loadBytes(fileName);
   String strData=new String(data);
   strData=strData.replaceAll("Back\\nImage2:(.*\\n)+?EndImage2\\n","");
-  saveStrings(fileName,strData.split("\\n"));
+  saveStrings(fileName,strData.split("\\r?\\n"));
   exit();
 }
