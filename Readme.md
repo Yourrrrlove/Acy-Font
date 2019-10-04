@@ -9,3 +9,4 @@
 * [Processing](https://processing.org)
 * [SAI2](https://saier.me/sai2)
 * [FontForge](https://fontforge.github.io)
+* [AutoKey](https://github.com/lxfly2000/AutoKey)
