@@ -1,3 +1,4 @@
+--先复制'Acy-Adobe-GB1-5-Regular-0-499_'
 start_y=0
 start_x=0
 
@@ -9,6 +10,7 @@ ei=nx
 
 I=string.byte('I',1)
 T=string.byte('T',1)
+V=string.byte('V',1)
 
 function isUpper(ch)
 	local b=ch:byte(1)
@@ -63,10 +65,13 @@ repeat
 	sendKey(I,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
-	sleep(100)--等待程序响应
+	sleep(300)--等待程序响应
 
 	--输入文件名
-	sendString('Acy-Adobe-GB1-5-Regular-0-499_')
+	sendKey(VK_LCONTROL,true)
+	sendKey(V,true)
+	sendKey(V,false)
+	sendKey(VK_LCONTROL,false)
 	send2DigitsNumber(start_y)
 	sendChar('_')
 	send2DigitsNumber(start_x)
@@ -84,7 +89,7 @@ repeat
 	sendKey(T,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
-	sleep(100)
+	sleep(200)
 
 	--按下右方向键
 	sendKey(VK_RIGHT,true)
