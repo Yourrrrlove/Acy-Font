@@ -63,6 +63,7 @@ repeat
 	sendKey(I,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
+	sleep(100)--等待程序响应
 
 	--输入文件名
 	sendString('Acy-Adobe-GB1-5-Regular-0-499_')
@@ -74,6 +75,7 @@ repeat
 	--按回车确认
 	sendKey(VK_RETURN,true)
 	sendKey(VK_RETURN,false)
+	sleep(100)
 
 	--按下转换路径快捷键
 	sendKey(VK_LCONTROL,true)
@@ -82,6 +84,7 @@ repeat
 	sendKey(T,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
+	sleep(100)
 
 	--按下右方向键
 	sendKey(VK_RIGHT,true)
