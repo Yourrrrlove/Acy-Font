@@ -1,5 +1,5 @@
-j=24
-i=0
+start_y=0
+start_x=0
 
 nx=20
 ny=25
@@ -10,54 +10,86 @@ ei=nx
 I=string.byte('I',1)
 T=string.byte('T',1)
 
---digit: starts from 1
-function getDigitVkCode(num,digit)
-	s=string.format("%02d",num);
-	return string.byte(s,digit)
+function isUpper(ch)
+	b=ch:byte(1)
+	return b>=string.byte('A',1) and b<=string.byte('Z',1)
+end
+
+function isLower(ch)
+	b=ch:byte(1)
+	return b>=string.byte('a',1) and b<=string.byte('z',1)
 end
 
 function sendChar(ch)
-	sendKey(string.byte(ch,1),true)
-	sendKey(string.byte(ch,1),false)
+	vkCh=ch:byte(1)
+	isCap=false
+	if isUpper(ch) then
+		isCap=true
+	elseif isLower(ch) then
+		vkCh=ch:upper():byte(1)
+	elseif vkCh==string.byte('.',1) then
+		vkCh=VK_DECIMAL
+	elseif vkCh==string.byte('-',1) then
+		vkCh=VK_OEM_MINUS
+	elseif vkCh==string.byte('_',1) then
+		isCap=true
+		vkCh=VK_OEM_MINUS
+	end
+	if isCap then
+		sendKey(VK_LSHIFT,true)
+	end
+	sendKey(vkCh,true)
+	sendKey(vkCh,false)
+	if isCap then
+		sendKey(VK_LSHIFT,false)
+	end
 end
 
 function sendString(str)
 	for i=1,#str,1 do
-		sendChar(str.sub(i,i))
+		sendChar(str:sub(i,i))
 	end
 end
 
 function send2DigitsNumber(n)
-	str=tostring(n)
-	sendChar(str:sub(1,1))
-	sendChar(str:sub(2,2))
+	sendString(string.format("%02d",n))
 end
 
 repeat
+	--按下导入快捷键
 	sendKey(VK_LCONTROL,true)
 	sendKey(VK_LSHIFT,true)
 	sendKey(I,true)
-	sendKey(VK_LCONTROL,false)
-	sendKey(VK_LSHIFT,false)
 	sendKey(I,false)
-	sendString('Acy-Adobe-GB-1-5-Regular-0-499-')
-	send2DigitsNumber(j)
-	sendChar('-')
-	send2DigitsNumber(i)
+	sendKey(VK_LSHIFT,false)
+	sendKey(VK_LCONTROL,false)
+
+	--输入文件名
+	sendString('Acy-Adobe-GB1-5-Regular-0-499_')
+	send2DigitsNumber(start_y)
+	sendChar('_')
+	send2DigitsNumber(start_x)
 	sendString('.png')
+
+	--按回车确认
 	sendKey(VK_RETURN,true)
 	sendKey(VK_RETURN,false)
+
+	--按下转换路径快捷键
 	sendKey(VK_LCONTROL,true)
 	sendKey(VK_LSHIFT,true)
-	sendKey(I,true)
-	sendKey(VK_LCONTROL,false)
-	sendKey(VK_LSHIFT,false)
+	sendKey(T,true)
 	sendKey(T,false)
+	sendKey(VK_LSHIFT,false)
+	sendKey(VK_LCONTROL,false)
+
+	--按下右方向键
 	sendKey(VK_RIGHT,true)
 	sendKey(VK_RIGHT,false)
-	i=i+1
-	if i==nx
-		i=0
-		j=j+1
+
+	start_x=start_x+1
+	if start_x==nx then
+		start_x=0
+		start_y=start_y+1
 	end
-until j==ej
+until start_y==ej
