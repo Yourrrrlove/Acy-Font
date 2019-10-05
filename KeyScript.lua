@@ -1,12 +1,11 @@
---先复制'Acy-Adobe-GB1-5-Regular-0-499_'
+--先复制'Acy-Adobe-GB1-5-Regular-500-999_'
 start_y=0
 start_x=0
-
 nx=20
 ny=25
-
 ej=ny
 ei=nx
+st=300
 
 I=string.byte('I',1)
 T=string.byte('T',1)
@@ -65,7 +64,7 @@ repeat
 	sendKey(I,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
-	sleep(300)--等待程序响应
+	sleep(st)--等待程序响应
 
 	--输入文件名
 	sendKey(VK_LCONTROL,true)
@@ -80,7 +79,7 @@ repeat
 	--按回车确认
 	sendKey(VK_RETURN,true)
 	sendKey(VK_RETURN,false)
-	sleep(100)
+	sleep(st)
 
 	--按下转换路径快捷键
 	sendKey(VK_LCONTROL,true)
@@ -89,7 +88,7 @@ repeat
 	sendKey(T,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
-	sleep(200)
+	sleep(st)
 
 	--按下右方向键
 	sendKey(VK_RIGHT,true)

@@ -3,7 +3,7 @@
 
 |字体名|文件名|笔刷|
 |-|-|-|
-|Acy R|Acy-Adobe-GB1-5-Regular|35px铅笔|
+|Acy Regular|Acy-Adobe-GB1-5-Regular|35px铅笔|
 
 使用软件：
 * [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
