@@ -11,18 +11,18 @@ I=string.byte('I',1)
 T=string.byte('T',1)
 
 function isUpper(ch)
-	b=ch:byte(1)
+	local b=ch:byte(1)
 	return b>=string.byte('A',1) and b<=string.byte('Z',1)
 end
 
 function isLower(ch)
-	b=ch:byte(1)
+	local b=ch:byte(1)
 	return b>=string.byte('a',1) and b<=string.byte('z',1)
 end
 
 function sendChar(ch)
-	vkCh=ch:byte(1)
-	isCap=false
+	local vkCh=ch:byte(1)
+	local isCap=false
 	if isUpper(ch) then
 		isCap=true
 	elseif isLower(ch) then
