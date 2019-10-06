@@ -13,3 +13,6 @@
 
 参考文档：
 * [Adobe-GB1](https://github.com/adobe-type-tools/Adobe-GB1)
+
+## 导出字体方法
+用FontForge打开sfd文件，选择 Generate Fonts 用默认设置生成otf文件。
