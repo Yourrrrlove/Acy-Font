@@ -1,4 +1,4 @@
---先复制'Acy-Adobe-GB1-5-Regular-1000-1499_'
+--先复制'Acy-Adobe-GB1-4-Regular-1000-1499_'
 start_y=0
 start_x=0
 nx=20
