@@ -10,3 +10,6 @@
 * [SAI2](https://saier.me/sai2)
 * [FontForge](https://fontforge.github.io)
 * [AutoKey](https://github.com/lxfly2000/AutoKey)
+
+参考文档：
+* [Adobe-GB1](https://github.com/adobe-type-tools/Adobe-GB1)
