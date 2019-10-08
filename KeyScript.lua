@@ -82,13 +82,13 @@ repeat
 	sleep(st)
 
 	--按下转换路径快捷键
-	sendKey(VK_LCONTROL,true)
+	--[[sendKey(VK_LCONTROL,true)
 	sendKey(VK_LSHIFT,true)
 	sendKey(T,true)
 	sendKey(T,false)
 	sendKey(VK_LSHIFT,false)
 	sendKey(VK_LCONTROL,false)
-	sleep(st)
+	sleep(st)]]
 
 	--按下右方向键
 	sendKey(VK_RIGHT,true)
