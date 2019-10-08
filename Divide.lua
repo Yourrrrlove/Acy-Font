@@ -17,11 +17,6 @@ local dpn=strpath:sub(1,#strpath-sppos)
 
 require("gd")
 
-function round(x)
-	x=tonumber(x) or 0
-	return math.floor(x+0.5)
-end
-
 function clipToChar(imgTable,x,y,w,h,clipBlankPx)
 	local clipX,clipY,clipW,clipH=x,y,w,h
 	local blankColor=imgTable:colorAllocate(255,255,255)
@@ -78,7 +73,7 @@ function clipToChar(imgTable,x,y,w,h,clipBlankPx)
 				end
 			end
 			if nbFound then
-				clipH=math.max(y+h-clipY,iy-clipY+clipBlankPx)
+				clipH=math.min(y+h-clipY,iy-clipY+clipBlankPx)
 				break
 			end
 		end
