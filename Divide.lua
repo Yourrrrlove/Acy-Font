@@ -105,7 +105,7 @@ local dh=img:sizeY()/ny
 local charImg=gd.createTrueColor(dw,dh)
 for j=0,ny-1,1 do
 	for i=0,nx-1,1 do
-		local x,y,w,h=clipToChar(img,i*dw,j*dh,dw,dh,1)
+		local x,y,w,h=clipToChar(img,i*dw,j*dh,dw,dh,5)
 		charImg:copyResampled(img,0,0,x,y,dw,dh,w,h)
 		charImg:png(string.format("%s_%02d_%02d.png",dpn,j,i))
 	end
