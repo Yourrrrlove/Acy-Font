@@ -14,11 +14,11 @@ img:fill(0,0,white)
 local ew=width/nx
 local eh=height/ny
 
-for x=0,width,ew do
+for x=0,width-1,ew do
 	img:line(x,0,x,height-1,gridColor)
 end
 
-for y=0,height,eh do
+for y=0,height-1,eh do
 	img:line(0,y,width-1,y,gridColor)
 end
 
