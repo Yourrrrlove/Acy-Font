@@ -1,11 +1,11 @@
---先复制'Acy-Adobe-GB1-4-Regular-1000-1499_'
-start_y=0
-start_x=0
+--先复制'Acy-Adobe-GB1-4-Regular-2000-2499_'
+start_y=23
+start_x=17
 nx=20
 ny=25
 ej=ny
 ei=nx
-st=300
+st=500
 
 I=string.byte('I',1)
 T=string.byte('T',1)
