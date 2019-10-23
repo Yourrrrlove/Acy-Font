@@ -4,6 +4,7 @@
 |字体名|文件名|笔刷|
 |-|-|-|
 |Acy Regular|Acy-Adobe-GB1-4-Regular|35px铅笔|
+* 因个人书写习惯原因，某些字的写法可能不是标准写法。
 
 使用软件：
 * [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)

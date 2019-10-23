@@ -2,8 +2,8 @@
 #encoding=utf-8
 #在 FontForge 中选择File,Execute Script...右键导入该脚本执行
 
-a=4500 #起始字符位置
-b=4999 #结束字符位置
+a=0 #起始字符位置
+b=499 #结束字符位置
 
 cx=20 #每行字符数量
 
