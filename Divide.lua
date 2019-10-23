@@ -2,9 +2,11 @@ nx=20
 ny=25
 
 local strpath
+local noclip=false
 if arg[1]==nil then
 	require("wx")
 	strpath=wx.wxFileSelector("选择文件",".","","png","便携式网络图像文件|*.png|所有文件|*",wx.wxFD_OPEN+wx.wxFD_FILE_MUST_EXIST)
+	noclip=wx.wxMessageBox("是否需要裁切空白？","裁切",wx.wxYES_NO)==wx.wxNO
 else
 	strpath=arg[1]
 end
@@ -19,81 +21,83 @@ require("gd")
 
 function clipToChar(imgTable,x,y,w,h,clipBlankPx)
 	local clipX,clipY,clipW,clipH=x,y,w,h
-	local blankColor=imgTable:colorAllocate(255,255,255)
-	if clipBlankPx~=-1 then
-		--Clip left border
-		for ix=x,x+w-1,1 do
-			local nbFound=false
-			for iy=y,y+h-1,1 do
-				if blankColor~=imgTable:getPixel(ix,iy) then
-					nbFound=true
-					break
-				end
-			end
-			if nbFound then
-				clipX=math.max(x,ix-clipBlankPx)
-				break
-			end
-		end
-		--Clip top border
-		for iy=y,y+h-1,1 do
-			local nbFound=false
+	if not noclip then
+		local blankColor=imgTable:colorAllocate(255,255,255)
+		if clipBlankPx~=-1 then
+			--Clip left border
 			for ix=x,x+w-1,1 do
-				if blankColor~=imgTable:getPixel(ix,iy) then
-					nbFound=true
+				local nbFound=false
+				for iy=y,y+h-1,1 do
+					if blankColor~=imgTable:getPixel(ix,iy) then
+						nbFound=true
+						break
+					end
+				end
+				if nbFound then
+					clipX=math.max(x,ix-clipBlankPx)
 					break
 				end
 			end
-			if nbFound then
-				clipY=math.max(y,iy-clipBlankPx)
-				break
-			end
-		end
-		--Clip right border
-		for ix=x+w-1,x,-1 do
-			local nbFound=false
+			--Clip top border
 			for iy=y,y+h-1,1 do
-				if blankColor~=imgTable:getPixel(ix,iy) then
-					nbFound=true
+				local nbFound=false
+				for ix=x,x+w-1,1 do
+					if blankColor~=imgTable:getPixel(ix,iy) then
+						nbFound=true
+						break
+					end
+				end
+				if nbFound then
+					clipY=math.max(y,iy-clipBlankPx)
 					break
 				end
 			end
-			if nbFound then
-				clipW=math.min(x+w-clipX,ix-clipX+clipBlankPx)
-				break
-			end
-		end
-		--Clip bottom border
-		for iy=y+h-1,y,-1 do
-			local nbFound=false
-			for ix=x,x+w-1,1 do
-				if blankColor~=imgTable:getPixel(ix,iy) then
-					nbFound=true
+			--Clip right border
+			for ix=x+w-1,x,-1 do
+				local nbFound=false
+				for iy=y,y+h-1,1 do
+					if blankColor~=imgTable:getPixel(ix,iy) then
+						nbFound=true
+						break
+					end
+				end
+				if nbFound then
+					clipW=math.min(x+w-clipX,ix-clipX+clipBlankPx)
 					break
 				end
 			end
-			if nbFound then
-				clipH=math.min(y+h-clipY,iy-clipY+clipBlankPx)
-				break
+			--Clip bottom border
+			for iy=y+h-1,y,-1 do
+				local nbFound=false
+				for ix=x,x+w-1,1 do
+					if blankColor~=imgTable:getPixel(ix,iy) then
+						nbFound=true
+						break
+					end
+				end
+				if nbFound then
+					clipH=math.min(y+h-clipY,iy-clipY+clipBlankPx)
+					break
+				end
 			end
-		end
-		--调整尺寸以符合原图比例w/h
-		local ratio=w/h
-		local clipRatio=clipW/clipH
-		if clipRatio>ratio then--补充高度
-			local newH=h*clipW/w
-			clipY=clipY+(clipH-newH)/2
-			clipH=newH
-			--看补充后是否出界
-			clipY=math.max(clipY,y)
-			clipY=math.min(clipY,y+h-clipH)
-		elseif clipRatio<ratio then--补充宽度
-			local newW=w*clipH/h
-			clipX=clipX+(clipW-newW)/2
-			clipW=newW
-			--看补充后是否出界
-			clipX=math.max(clipX,x)
-			clipX=math.min(clipX,x+w-clipW)
+			--调整尺寸以符合原图比例w/h
+			local ratio=w/h
+			local clipRatio=clipW/clipH
+			if clipRatio>ratio then--补充高度
+				local newH=h*clipW/w
+				clipY=clipY+(clipH-newH)/2
+				clipH=newH
+				--看补充后是否出界
+				clipY=math.max(clipY,y)
+				clipY=math.min(clipY,y+h-clipH)
+			elseif clipRatio<ratio then--补充宽度
+				local newW=w*clipH/h
+				clipX=clipX+(clipW-newW)/2
+				clipW=newW
+				--看补充后是否出界
+				clipX=math.max(clipX,x)
+				clipX=math.min(clipX,x+w-clipW)
+			end
 		end
 	end
 	return clipX,clipY,clipW,clipH
