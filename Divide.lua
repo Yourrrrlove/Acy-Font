@@ -1,17 +1,27 @@
 nx=20
 ny=25
 
+require("alien")
+
+alien.user32.SetProcessDPIAware:types{ret="int",abi="stdcall"}
+alien.user32.SetProcessDPIAware()
+
 local strpath
 local noclip=false
 if arg[1]==nil then
 	require("wx")
 	strpath=wx.wxFileSelector("选择文件",".","","png","便携式网络图像文件|*.png|所有文件|*",wx.wxFD_OPEN+wx.wxFD_FILE_MUST_EXIST)
-	noclip=wx.wxMessageBox("是否需要裁切空白？","裁切",wx.wxYES_NO)==wx.wxNO
 else
 	strpath=arg[1]
 end
 if strpath==nil or strpath=='' then
 	os.exit()
+end
+
+if arg[2]==nil then
+	noclip=wx.wxMessageBox("是否需要裁切空白？","裁切",wx.wxYES_NO)==wx.wxNO
+else
+	noclip=arg[2]=='noclip'
 end
 
 local _,sppos=strpath:reverse():find('%.')
