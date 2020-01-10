@@ -17,4 +17,5 @@
 ## 导出字体方法
 用FontForge打开sfd文件，选择 Generate Fonts 用默认设置生成otf文件。
 
-[下载](https://github.com/lxfly2000/Acy-Font/releases)
+## 下载
+[GitHub Release](https://github.com/lxfly2000/Acy-Font/releases)
