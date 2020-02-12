@@ -19,13 +19,16 @@ for i in range(a,b+1):
     y=int((glyph.originalgid-a)/cx)
     x=glyph.originalgid-a-y*cx
     img='Acy-Adobe-GB1-4-Regular-%d-%d_%02d_%02d.png'%(a,b,y,x)
-    glyph.importOutlines(img)
-    #提取字形
-    font.autoTrace()
-    #去除重叠（我发现FontForge在提取字形时有可能会生成重复的轮廓造成导出的字体显示不正常，所以需要这一步）
-    font.removeOverlap()
-    #删除背景图像
-    #因 FontForge 未提供删除图像接口所以需要执行完后手动删除
+    try:
+        glyph.importOutlines(img)
+        #提取字形
+        font.autoTrace()
+        #去除重叠（我发现FontForge在提取字形时有可能会生成重复的轮廓造成导出的字体显示不正常，所以需要这一步）
+        font.removeOverlap()
+        #删除背景图像
+        #因 FontForge 未提供删除图像接口所以需要执行完后手动删除
+    except FileNotFoundError:
+        fontforge.logWarning(img+' 未找到，跳过')
 
 #选择字形
 font.selection.select(("ranges",None),a,b)

@@ -47,6 +47,9 @@ function clipToChar(imgTable,x,y,w,h,clipBlankPx)
 					clipX=math.max(x,ix-clipBlankPx)
 					break
 				end
+				if ix==x+w-1 then
+					return 0,0,0,0
+				end
 			end
 			--Clip top border
 			for iy=y,y+h-1,1 do
@@ -120,7 +123,9 @@ local charImg=gd.createTrueColor(dw,dh)
 for j=0,ny-1,1 do
 	for i=0,nx-1,1 do
 		local x,y,w,h=clipToChar(img,i*dw,j*dh,dw,dh,5)
-		charImg:copyResampled(img,0,0,x,y,dw,dh,w,h)
-		charImg:png(string.format("%s_%02d_%02d.png",dpn,j,i))
+		if w~=0 then
+			charImg:copyResampled(img,0,0,x,y,dw,dh,w,h)
+			charImg:png(string.format("%s_%02d_%02d.png",dpn,j,i))
+		end
 	end
 end
