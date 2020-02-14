@@ -3,16 +3,17 @@
 
 |字体名|文件名|笔刷|
 |-|-|-|
-|Acy Regular|Acy-Adobe-GB1-4-Regular|35px铅笔|
+|Acy Regular|Acy-Adobe-GB1-4-Regular|35px铅笔、固定透明度、粗细变化、最小宽度0|
 * 因个人书写习惯原因，某些字的写法可能不是标准写法。
 
 使用软件：
 * [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
-* [SAI2](https://saier.me/sai2)
+* [SAI2](https://www.systemax.jp) 或 [SketchBook](https://www.sketchbook.com)、[MediBang Paint](https://medibangpaint.com) 等绘画软件
 * [FontForge](https://fontforge.github.io)
 
 参考文档：
 * [Adobe-GB1](https://github.com/adobe-type-tools/Adobe-GB1)
+* [Adobe-Japan1](https://github.com/adobe-type-tools/Adobe-Japan1)
 
 ## 导出字体方法
 用FontForge打开sfd文件，选择 Generate Fonts 用默认设置生成otf文件。
