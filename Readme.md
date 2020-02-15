@@ -12,7 +12,7 @@
 
 使用软件：
 * [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
-* [SAI2](https://www.systemax.jp) 或 [SketchBook](https://www.sketchbook.com)、[MediBang Paint](https://medibangpaint.com) 等绘画软件
+* [SAI2](https://www.systemax.jp)
 * [FontForge](https://fontforge.github.io)
 
 参考文档：
