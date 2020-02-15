@@ -7,7 +7,7 @@
 * 因个人书写习惯原因，某些字的写法可能不是标准写法。
 
 授权使用许可条款：
-* 本项目字体的授权许可以 [LICENSE.TXT](LICENSE.TXT) 文件中的描述为准；
+* 本项目字体采用 SIL Open Font License, Version 1.1 授权许可，具体以 [LICENSE.TXT](LICENSE.TXT) 文件中的描述为准；
 * 提示信息：该字体可免费用于商业和非商业用途，您在使用时应当在应用了本项目字体的软件/媒体/文档等场景的明显位置中注明作者版权信息并保留 LICENSE.TXT 中的授权许可全文。
 
 使用软件：
@@ -24,4 +24,3 @@
 
 ## 下载
 [GitHub Release](https://github.com/lxfly2000/Acy-Font/releases)
-sffi
