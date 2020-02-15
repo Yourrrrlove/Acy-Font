@@ -18,7 +18,7 @@ for i in range(a,b+1):
     #导入
     y=int((glyph.originalgid-a)/cx)
     x=glyph.originalgid-a-y*cx
-    img='Acy-Adobe-GB1-4-Regular-%d-%d_%02d_%02d.png'%(a,b,y,x)
+    img='Acy-Adobe-GB1-Regular-%d-%d_%02d_%02d.png'%(a,b,y,x)
     try:
         glyph.importOutlines(img)
         #提取字形
