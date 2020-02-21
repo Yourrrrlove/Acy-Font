@@ -24,3 +24,6 @@
 
 ## 下载
 [GitHub Release](https://github.com/lxfly2000/Acy-Font/releases)
+
+## FontForge 使用教程视频
+[Bilibili](https://www.bilibili.com/video/av22009352)
