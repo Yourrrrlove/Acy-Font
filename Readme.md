@@ -14,6 +14,7 @@
 * [Lua for Windows](https://github.com/rjpcomputing/luaforwindows)
 * [SAI2](https://www.systemax.jp)
 * [FontForge](https://fontforge.github.io)
+* [AFDKO](https://github.com/adobe-type-tools/afdko)
 
 参考文档：
 * [Adobe-GB1](https://github.com/adobe-type-tools/Adobe-GB1)
