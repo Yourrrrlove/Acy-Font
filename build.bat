@@ -1,3 +1,3 @@
 call afdko_env\Scripts\activate.bat
-ren Acy-Regular.otf font.otf
-makeotf -f font.otf -ff ..\Adobe-GB1-20190729\GSUB\ag15-gsub.fea -r -nS
+if exist Regular\Acy-Regular.otf del Regular\Acy-Regular.otf
+makeotf -f Acy-Regular.otf -ff ..\Adobe-GB1-20190729\GSUB\ag15-gsub.fea -fi fontinfo.txt -r -nS -o Regular\Acy-Regular.otf
