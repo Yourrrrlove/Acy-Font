@@ -3,3 +3,6 @@
 ttx -f Acy-Regular.otf
 然后在ttx文件中修改vmtx部分的height值，修正为原来的字符高度（通常为1000），修改后执行下列命令保存为新的otf文件：
 ttx -f Acy-Regular.ttx
+
+2. 安卓系统行距问题
+转换后的字体在安卓中显示时行距过小，需要手动调整OS_2的sTypoAscender和sTypoDescender，sTypoLineGap.
