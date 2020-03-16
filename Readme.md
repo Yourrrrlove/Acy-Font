@@ -3,8 +3,11 @@
 
 |字体名|文件名|笔刷|
 |-|-|-|
-|Acy Regular|Acy-Regular.otf|35px铅笔、固定透明度、粗细变化、最小宽度0|
+|Acy Regular|Acy-Regular.otf|35px铅笔（硬边缘）、固定透明度、粗细变化、最小宽度0|
+|Acy Medium|Acy-Medium.otf|135%的Regular笔刷|
+|Acy Bold|Acy-Bold.otf|175%的Regular笔刷|
 * 因个人书写习惯原因，某些字的写法可能不是标准写法。
+* 本字体支持Adobe GB 1-1标准、同时包含Adobe GB 1-2与Adobe Japan 1-1交集部分的字符，即支持基本上所有常用的简/繁/日文字符。
 
 授权使用许可条款：
 * 本项目字体采用 SIL Open Font License, Version 1.1 授权许可，具体以 [LICENSE.TXT](LICENSE.TXT) 文件中的描述为准；
