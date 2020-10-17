@@ -6,6 +6,9 @@ ttx -f Acy-Regular.ttx
 
 2. 安卓系统行距问题
 转换后的字体在安卓中显示时行距过小，需要手动调整OS_2的sTypoAscender和sTypoDescender，sTypoLineGap，此处分别改为799，-196，995。
+    <sTypoAscender value="799"/>
+    <sTypoDescender value="-196"/>
+    <sTypoLineGap value="995"/>
 
 3. 笔刷使用错误
 字符CID428～CID520（不包括429、431）因错误使用笔刷导致在FontForge中导入这些字符时与其他字符相比会偏细，需要手动将粗细增加10%左右才能获得较好效果。
