@@ -159,3 +159,5 @@ Bold的name节点：
       Bold
     </namerecord>
   </name>
+
+6. “辰”字(CID1250)边界有问题造成大小错误。
