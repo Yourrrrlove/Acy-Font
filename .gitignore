@@ -1,1 +1,4 @@
 *.otf
+*.sfd
+afdko_env/
+*.ttx

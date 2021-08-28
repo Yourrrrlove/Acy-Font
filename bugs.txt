@@ -33,7 +33,7 @@ Regular的name节点：
       Acy Regular
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Regular
@@ -51,7 +51,7 @@ Regular的name节点：
       Acy Regular
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Regular
@@ -72,7 +72,7 @@ Medium的name节点：
       Acy Medium
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Medium
@@ -96,7 +96,7 @@ Medium的name节点：
       Acy Medium
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Medium
@@ -123,7 +123,7 @@ Bold的name节点：
       Acy Bold
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Bold
@@ -147,7 +147,7 @@ Bold的name节点：
       Acy Bold
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.112;makeotfexe 2.5.65598
+      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Bold
