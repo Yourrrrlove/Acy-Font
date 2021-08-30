@@ -20,6 +20,9 @@ ttx -f Acy-Regular.ttx
 ttx文件中name节点下id为4的名称需要加上<空格>+字重名称。部分其他名称亦需添加或修改，参考：https://zhuanlan.zhihu.com/p/38679788
 Regular的name节点：
   <name>
+    <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
+      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+    </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy
     </namerecord>
@@ -27,16 +30,37 @@ Regular的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      1.000;UKWN;Acy-Regular;lxfly2000
+      1.6;UKWN;Acy-Regular;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Regular
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Regular
+    </namerecord>
+    <namerecord nameID="7" platformID="0" platEncID="3" langID="0x0">
+      Acy-Font
+    </namerecord>
+    <namerecord nameID="8" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="9" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="11" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="12" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="13" platformID="0" platEncID="3" langID="0x0">
+      SIL Open Font License, Version 1.1
+    </namerecord>
+    <namerecord nameID="14" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000/Acy-Font/blob/master/LICENSE.TXT
     </namerecord>
     <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
       Acy
@@ -45,13 +69,13 @@ Regular的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.000;UKWN;Acy-Regular;lxfly2000
+      1.6;UKWN;Acy-Regular;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       Acy Regular
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Regular
@@ -59,6 +83,9 @@ Regular的name节点：
   </name>
 Medium的name节点：
   <name>
+    <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
+      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+    </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Medium
     </namerecord>
@@ -66,16 +93,37 @@ Medium的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      1.000;UKWN;Acy-Medium;lxfly2000
+      1.6;UKWN;Acy-Medium;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Medium
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Medium
+    </namerecord>
+    <namerecord nameID="7" platformID="0" platEncID="3" langID="0x0">
+      Acy-Font
+    </namerecord>
+    <namerecord nameID="8" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="9" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="11" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="12" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="13" platformID="0" platEncID="3" langID="0x0">
+      SIL Open Font License, Version 1.1
+    </namerecord>
+    <namerecord nameID="14" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000/Acy-Font/blob/master/LICENSE.TXT
     </namerecord>
     <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy
@@ -90,13 +138,13 @@ Medium的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.000;UKWN;Acy-Medium;lxfly2000
+      1.6;UKWN;Acy-Medium;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       Acy Medium
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Medium
@@ -110,6 +158,9 @@ Medium的name节点：
   </name>
 Bold的name节点：
   <name>
+    <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
+      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+    </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Bold
     </namerecord>
@@ -117,16 +168,37 @@ Bold的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      1.000;UKWN;Acy-Bold;lxfly2000
+      1.6;UKWN;Acy-Bold;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Bold
     </namerecord>
     <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0" unicode="True">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy-Bold
+    </namerecord>
+    <namerecord nameID="7" platformID="0" platEncID="3" langID="0x0">
+      Acy-Font
+    </namerecord>
+    <namerecord nameID="8" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="9" platformID="0" platEncID="3" langID="0x0">
+      lxfly2000
+    </namerecord>
+    <namerecord nameID="11" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="12" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000
+    </namerecord>
+    <namerecord nameID="13" platformID="0" platEncID="3" langID="0x0">
+      SIL Open Font License, Version 1.1
+    </namerecord>
+    <namerecord nameID="14" platformID="0" platEncID="3" langID="0x0">
+      https://github.com/lxfly2000/Acy-Font/blob/master/LICENSE.TXT
     </namerecord>
     <namerecord nameID="16" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy
@@ -141,13 +213,13 @@ Bold的name节点：
       Regular
     </namerecord>
     <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
-      1.000;UKWN;Acy-Bold;lxfly2000
+      1.6;UKWN;Acy-Bold;lxfly2000
     </namerecord>
     <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
       Acy Bold
     </namerecord>
     <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
-      Version 1.000;hotconv 1.0.118;makeotfexe 2.5.65603
+      Version 1.6;hotconv 1.0.118;makeotfexe 2.5.65603
     </namerecord>
     <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
       Acy-Bold
