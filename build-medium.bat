@@ -7,7 +7,7 @@ if not exist afdko_env (
 )
 if exist Medium\Acy-Medium.otf del Medium\Acy-Medium.otf
 if not exist Medium md Medium
-makeotf -f Acy-Medium.otf -ff ..\Adobe-GB1\GSUB\ag15-gsub.fea -fi fontinfo-medium.txt -r -nS -o Medium\Acy-Medium.otf
+makeotf -f Acy-Medium.otf -ff Adobe-GB1\GSUB\ag15-gsub.fea -fi fontinfo-medium.txt -r -nS -o Medium\Acy-Medium.otf
 ttx -f Medium\Acy-Medium.otf
 notepad Medium\Acy-Medium.ttx
 ttx -f Medium\Acy-Medium.ttx

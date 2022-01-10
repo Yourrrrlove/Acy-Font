@@ -21,7 +21,7 @@ ttx文件中name节点下id为4的名称需要加上<空格>+字重名称。部�
 Regular的name节点：
   <name>
     <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
-      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+      Copyright (C) 2019-2022, lxfly2000 (lxfly2000@outlook.com)
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy
@@ -84,7 +84,7 @@ Regular的name节点：
 Medium的name节点：
   <name>
     <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
-      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+      Copyright (C) 2019-2022, lxfly2000 (lxfly2000@outlook.com)
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Medium
@@ -159,7 +159,7 @@ Medium的name节点：
 Bold的name节点：
   <name>
     <namerecord nameID="0" platformID="0" platEncID="3" langID="0x0">
-      Copyright (C) 2019-2021, lxfly2000 (lxfly2000@outlook.com)
+      Copyright (C) 2019-2022, lxfly2000 (lxfly2000@outlook.com)
     </namerecord>
     <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0" unicode="True">
       Acy Bold
