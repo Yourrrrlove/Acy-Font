@@ -233,3 +233,6 @@ Bold的name节点：
   </name>
 
 6. “辰”字(CID1250)边界有问题造成大小错误。
+
+7. 加入拉丁字符后，需要修改CMAP表
+在最后一个cmap节点中加入CMapLatin.xlsx中的XML内容。
